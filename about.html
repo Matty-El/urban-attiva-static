@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description"
-        content="Urban Paws: Our Team - dedicated to sourcing and testing the very best, high quality, British designed or British made products for your pet." />
+        content="Urban Attiva is a British brand dedicated to quality sports and outdoor equipment." />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <title>The Team | Urban Paws</title>
+    <title>The Team | Urban Attiva</title>
 </head>
 
 <body>
@@ -21,8 +21,8 @@
         <!-- NAVIGATION -->
 
         <nav class="navbar navbar-light navbar-expand-md navbar-fixed">
-            <a href="index.html" class="navbar-brand mr-auto"><img id="logo" src="assets/images/urban-paws-logo.png"
-                    alt="Urban Paws logo" /></a>
+            <a href="index.html" class="navbar-brand mr-auto"><img id="logo" src="assets/images/urban-attiva-logo.png"
+                    alt="Urban Attiva logo" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,20 +32,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Shop
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="shop-dog.html"><img src="assets/images/shop-dog-red-dog.jpeg"
-                                    height="100" width="150" alt="Shop dog menu" />
-                            </a>
-                            <a class="dropdown-item" href="shop-cat.html"><img
-                                    src="assets/images/shop-cat-blue-cat.jpeg" height="96" width="150"
-                                    alt="Shop cat menu" />
-                            </a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="about.html">About Us<span class="sr-only">(current)</span></a>
@@ -79,7 +67,7 @@
                     <img src="assets/images/jane.jpeg" class="team-image" alt="Jane" />
                     <h3>The so-called Boss</h3>
                     <p>
-                        She may be the head of Urban Paws, but deep down she knows she's really the obedient servant to
+                        She may be the head of Urban Attiva, but deep down she knows she's really the obedient servant to
                         Percy, Aggie and Daisy Dog. Jane doesn’t mind though because there’s no better team to work
                         alongside. She is a keen animal
                         conservationist and volunteer at her local cat adoption centre.
@@ -93,7 +81,7 @@
                         The most vocal member of the team, Percy likes to tell us when he’s not happy and it’s probably
                         because he’s hangry and wants his breakfast or dinner. He can usually be found shouting at
                         delivery drivers and magpies, or lying
-                        upside down with his paws in the air.
+                        upside down with his Attiva in the air.
                     </p>
                 </div>
                 <div class="col team-member">
@@ -122,43 +110,45 @@
         </div>
     </main>
 
-    <footer>
-        <div class="copyright">
-            <span>Copyright <i class="fa fa-copyright"></i> Urban
-                Paws 2020. All rights reserved.</span>
-        </div>
-
-        <!-- UNION JACK FLAG -->
-
-        <div class="flag">
-            <span><img id="flag" src="assets/images/union-jack-flag.svg" alt="Union Jack flag" /></span>
-        </div>
-
-        <!-- SOCIAL MEDIA -->
-
-        <div>
-            <ul class="social-media">
-                <li>
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
-                        aria-label="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i
-                            class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i
-                            class="fa fa-youtube"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
-                        aria-label="Instagram"><i class="fa fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer"
-                        aria-label="Pinterest"><i class="fa fa-pinterest"></i></a>
-                </li>
-            </ul>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-3">Information</h5>
+                    <ul>
+                        <li><a href="{% url 'terms_conditions' %}">Terms & Conditions</a></li>
+                        <li><a href="{% url 'returns' %}">Returns and Refunds</a></li>
+                        <li><a href="{% url 'faq' %}">FAQs</a></li>
+                    </ul>
+                    <hr>
+                    <h5 class="mb-3">Customers</h5>
+                    <ul>
+                        <li><a href="{% url 'account_login' %}">Login</a></li>
+                        <li><a href="{% url 'account_signup' %}">Register</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-3">Registered Address</h5>
+                    <p><strong>Urban Attiva</strong><br>1 High Street<br>Newtown<br>NT1 1GB<br>England<br><strong>United
+                            Kingdom<br><br>Customer Service Tel: 00000 999999</strong></p>
+                    <hr class="d-block d-md-none">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-3">Social Media</h5>
+                    <p class="social-media"><a href="https://www.facebook.com/urbanattiva" target="_blank"
+                        rel="noopener noreferrer" class="facebook"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/"
+                            target="_blank" rel="noopener noreferrer" class="twitter"><i class="fa fa-twitter"></i></a><a
+                            href="https://www.instagram.com/urban_attiva/" target="_blank" rel="noopener noreferrer" class="instagram"><i
+                                class="fa fa-instagram"></i></a><a href="https://www.youtube.com/" target="_blank"
+                                rel="noopener noreferrer" class="youtube"><i class="fa fa-youtube"></i></a></p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-12 mb-2 mb-lg-0">
+                            <p class="text-left">© 2021 Matthew Leach</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -195,16 +185,6 @@
                             <label for="comments">Comments or enquiry</label>
                             <textarea class="text-area" id="comments" cols="20" name="comments" wrap="hard"
                                 placeholder="Please type your comment or enquiry here..." rows="10"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <fieldset class="contact-fieldset">
-                                <label for="dog" id="radio-label-dog">Dog</label>
-                                <input type="radio" value="dog" id="dog" name="pet_type" required>
-                                <label for="cat" class="radio-label">Cat</label>
-                                <input type="radio" value="cat" id="cat" name="pet_type" required>
-                                <label for="both" class="radio-label">Both</label>
-                                <input type="radio" value="both" id="both" name="pet_type" required>
-                            </fieldset>
                         </div>
                         <div class="form-group checkbox-inline">
                             <label><input type="checkbox" value="newsletter"> Sign up to our newsletter</label>

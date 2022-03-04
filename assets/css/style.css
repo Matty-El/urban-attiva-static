@@ -42,16 +42,10 @@ h1, h2, h3, h4, h5, h6 {
     min-width: 130px;
 }
 
-#shop-dog-button {
+#shop-now-button {
     display: block;
-    float: left;
+    float: right;
     margin-bottom: 20px;
-}
-
-#shop-cat-button {
-    display: block;
-    float: left;
-    margin-left: 40px;
 }
 
 .amazon-button {
@@ -94,8 +88,8 @@ i {
 /* --------------------------- NAVIGATION */
 
 #logo {
-    height: 50px;
-    width: 229px;
+    height: 65.5px;
+    width: 300px;
 }
 
 .navbar-brand {
@@ -129,7 +123,7 @@ i {
     right: 0;
     left: 0;
     z-index: 1030;
-    background-color: #F6F7F7;
+    background-color: #FFFFFF;
 }
 
 .navbar-toggler {
@@ -175,12 +169,12 @@ nav {
 /* --------------------------- HERO IMAGE AND TITLE SECTION HOME PAGE */
 
 .hero-section {
-    background: url("../images/two-dachshunds-with-blue-cat.jpeg") no-repeat center center;
+    background: url("../images/hero-image.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
+    height: 67vh;
     display: flex;
     width: 100vw;
     justify-content: center;
@@ -206,7 +200,7 @@ nav {
     position: relative;
     width: inherit;
     text-align: center;
-    top: 50%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -511,7 +505,7 @@ nav {
     font-size: 18px;
 }
 
-/* --------------------------- FOOTER */
+/* --------------------------- FOOTER
 
 footer {
     display: flex;
@@ -568,7 +562,78 @@ footer {
     footer {
         justify-content: space-around;
     }
+} */
+
+/* ----------------- Footer --------------- */
+
+#footer {
+  background: #DEE3E3;
+  padding: 50px 0;
 }
+
+#footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+#footer ul a {
+  color: #4B5657;
+}
+
+#footer .social-media {
+  text-align: left;
+}
+
+#footer .social-media a {
+  margin: 0 10px 0 0;
+  color: #FFFFFF;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  line-height: 26px;
+  font-size: 15px;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  vertical-align: bottom;
+  background-color: #566465;
+}
+
+#footer .social-media a i {
+  vertical-align: bottom;
+  line-height: 30px;
+}
+
+#footer .social-media a.facebook:hover {
+  background-color: #4460AE;
+}
+
+#footer .social-media a.youtube:hover {
+  background-color: #C21F25;
+}
+
+#footer .social-media a.twitter:hover {
+  background-color: #33CCFF;
+}
+
+#footer .social-media a.instagram:hover {
+  background-color: #CD4378;
+}
+
+#copyright {
+  background: #4B5657;
+  color: #ccc;
+  padding: 20px 0;
+  font-size: 0.5rem;
+}
+
+#copyright p {
+  margin: 0;
+}
+
+
 
 /* --------------------------- CONTACT US MODAL */
 
