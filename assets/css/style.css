@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 /* --------------------------- FONTS */
 
 body {
@@ -48,10 +49,30 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
 }
 
-.amazon-button,
-.ebay-button {
+.amazon-btn {
+    text-align: left;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #FF9900;
+    border-color: #FF9900;
     margin-top: 10px;
     font-size: 20px;
+    min-width: 210px;
+}
+
+.ebay-btn {
+    text-align: left;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #0064d2;
+    border-color: #0064d2;
+    margin-top: 10px;
+    font-size: 20px;
+    min-width: 210px;
 }
 
 .btn--grey {
@@ -79,11 +100,6 @@ h1, h2, h3, h4, h5, h6 {
 
 i {
     color: #F6F7F7;
-}
-
-.fa:hover {
-    transition: 0.25s;
-    color: #FF834F;
 }
 
 /* --------------------------- NAVIGATION */
@@ -238,7 +254,7 @@ nav {
 
 .product-section {
     width: 100vw;
-    background-color: #4B5657;
+    background-color: #F6F7F7 !important;
     text-align: left;
     margin: auto;
     color: #566465;
@@ -276,6 +292,27 @@ nav {
     }
 }
 
+/* --------------------------- CUSTOMER REVIEWS */
+
+.customer-reviews {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.customer-message {
+  max-width: 300px;
+  margin: auto;
+}
+
+.customer-message i {
+  color: #566465;
+}
+
+.customer-reviews img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
 /* --------------------------- SHOP PAGES TITLE AND PRODUCT CARDS */
 
 .shop-title {
@@ -308,11 +345,12 @@ nav {
     height: 100%;
     color: #4B5657;
     padding-top: 20px;
-    max-width: 320px;
+    max-width: 480px;
     border-radius: 5px;
 }
 
 .card h2 {
+    min-height: 100px;
     font-size: 28px;
 }
 
@@ -322,6 +360,14 @@ nav {
 
 .card h4 {
     font-size: 18px;
+}
+
+.product-card-p1 {
+    min-height: 200px;
+}
+
+.product-card-p2 {
+    min-height: 100px;
 }
 
 .card-footer--background {
@@ -506,66 +552,7 @@ nav {
     font-size: 18px;
 }
 
-/* --------------------------- FOOTER
-
-footer {
-    display: flex;
-    font-family: "Montserrat", sans-serif;
-    color: #F6F7F7;
-    background-color: #4B5657;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap-reverse;
-}
-
-.copyright {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    text-align: center;
-    padding: 50px 20px 40px 20px;
-    margin: 0;
-}
-
-.copyright i {
-    color: #F6F7F7;
-}
-
-.fa-copyright {
-    pointer-events: none;
-}
-
-.social-media {
-    text-align: center;
-    padding: 20px 0 30px 0;
-    margin: 0;
-}
-
-.social-media li {
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
-.social-media i {
-    font-size: 28px;
-    color: #F6F7F7;
-    padding-top: 20px
-}
-
-#flag {
-    padding-top: 10px;
-    width: 50px;
-    height: 35px;
-}
-
-@media all and (max-width: 768px) {
-    footer {
-        justify-content: space-around;
-    }
-} */
-
-/* ----------------- Footer --------------- */
+/* --------------------------- FOOTER ---------- */
 
 #footer {
   background: #DEE3E3;
@@ -633,8 +620,6 @@ footer {
 #copyright p {
   margin: 0;
 }
-
-
 
 /* --------------------------- CONTACT US MODAL */
 
