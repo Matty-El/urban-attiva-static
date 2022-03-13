@@ -8,7 +8,7 @@ function sendMail(contact) {
     .then(
         function (response) {
             if (response.status == 200 && response.text == 'OK')
-            alert('Your message has been sent Successfully..!!!');
+            alert('Thank you for your message. Urban Attiva will respond to your message as soon as possible');
             else
             alert('Sorry there was a problem. Please try again...!');
             console.log("SUCCESS", response);
