@@ -153,40 +153,32 @@
 
     <!-- CONTACT FORM MODAL -->
 
-    <div class="modal fade" id="findOutMoreModal" tabindex="-1" role="dialog" aria-labelledby="findOutMoreModalTitle"
-        aria-hidden="true">
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="findOutMoreModalTitle">Contact Us</h5>
+                    <h4 class="modal-title" id="contactModalTitle">Contact Us</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form class="contact-form">
+                    <form class="contact-form" onsubmit="return sendMail(this)">
                         <div class="form-group">
                             <label for="fname">First Name</label>
-                            <input class="text-input" id="fname" type="text" name="first_name"
-                                placeholder="Enter your first name..." required>
+                            <input class="text-input" id="fname" type="text" name="first_name" placeholder="Enter your first name..." required>
                         </div>
                         <div class="form-group">
                             <label for="lname">Last Name</label>
-                            <input class="text-input" id="lname" type="text" name="last_name"
-                                placeholder="Enter your last name..." required>
+                            <input class="text-input" id="lname" type="text" name="last_name" placeholder="Enter your last name..." required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input class="text-input" id="email" type="email" name="email_address"
-                                placeholder="Enter your email address..." required>
+                            <input class="text-input" id="email" type="email" name="email_address" placeholder="Enter your email address..." required>
                         </div>
                         <div class="form-group">
                             <label for="comments">Comments or enquiry</label>
-                            <textarea class="text-area" id="comments" cols="20" name="comments" wrap="hard"
-                                placeholder="Please type your comment or enquiry here..." rows="10"></textarea>
-                        </div>
-                        <div class="form-group checkbox-inline">
-                            <label><input type="checkbox" value="newsletter"> Sign up to our newsletter</label>
+                            <textarea class="text-area" id="comments" cols="20" name="comments" wrap="hard" placeholder="Please type your comment or enquiry here..." maxlength="500"></textarea>
                         </div>
                         <button type="submit" class="btn btn-lg btn--brand-color" value="Contact Us">Submit</button>
                     </form>
