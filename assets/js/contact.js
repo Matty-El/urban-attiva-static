@@ -7,17 +7,17 @@ function sendMail(contact) {
     })
     .then(
         function (response) {
+            if (response.status == 200 && response.text == 'OK')
+            alert('Your message has been sent Successfully..!!!');
+            else
+            alert('Sorry there was a problem. Please try again...!');
             console.log("SUCCESS", response);
             location.reload();
         },
         function (error) {
+            alert('Sorry there was a problem. Please try again...!');
             console.log("FAILED", error);
         }
     );
     return false;
 }
-
-
-$("#contact-form").on("hidden.bs.modal", function () {
-    $(this).find("contact-form").trigger("reset");
-});
