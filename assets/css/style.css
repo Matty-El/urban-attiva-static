@@ -140,7 +140,7 @@ i {
     right: 0;
     left: 0;
     z-index: 1030;
-    background-color: #FFFFFF;
+    background-color: #DEE3E3;
 }
 
 .navbar-toggler {
@@ -554,6 +554,16 @@ nav {
 
 /* --------------------------- FOOTER ---------- */
 
+/* Sticky footer adapted from https://css-tricks.com/couple-takes-sticky-footer/ */
+
+/* ---------------- Sticky Footer -------------- */
+
+.wrapper {
+  min-height: calc(100vh - 500px);
+}
+
+/* ---------------- Sticky Footer End ---------- */
+
 #footer {
   background: #DEE3E3;
   padding: 50px 0;
@@ -668,22 +678,36 @@ nav {
     background-color: #F6F7F7;
 }
 
-.radio-label {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-#radio-label-dog {
-    padding-left: 0;
-    padding-right: 10px;
-}
-
 .toast {
     position: fixed;
     bottom: 50%;
     right: 50%;
     top: 25%;
-    /*width: 300px;*/
     z-index: 9999;
-    /*min-height: 200px;
+    min-height: 200px;
+}
+
+/* --------------------------- ERROR PAGES */
+
+.error-page {
+    height: 50vh;
+    margin-top: 150px;
+}
+
+.err-orange {
+  color: #FF834F;
+}
+
+.err {
+  padding-top: 50px;
+  color: #6E7F80;
+}
+
+a {
+  text-decoration: none;
+  color: #4F73FF;
+}
+
+a:hover {
+  text-decoration: underline;
 }
